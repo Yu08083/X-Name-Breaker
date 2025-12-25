@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter(X)名前改行ツール</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <main class="card">
+        <header class="header">
+            <i class="fa-brands fa-x-twitter"></i>
+            <h1>X Name Breaker</h1>
+            <p>特殊改行コード(LSEP)変換ツール</p>
+        </header>
+
+        <div class="input-section">
+            <textarea id="inputName" placeholder="改行を入れて名前を入力..." oninput="updateCounter()"></textarea>
+            <div class="counter-area" id="counterArea">
+                <span id="charCount">0</span> / 50
+            </div>
+        </div>
+
+        <button class="btn-primary" id="copyBtn" onclick="convertAndCopy()">
+            <i class="fa-solid fa-copy"></i> 変換してコピー
+        </button>
+
+        <div id="previewContainer" class="hidden">
+            <span class="label">生成済み（コピー済み）</span>
+            <div class="preview-box" id="previewText"></div>
+        </div>
+    </main>
+
+    <section class="instructions">
+        <h2><i class="fa-solid fa-circle-info"></i> 使い方の手順</h2>
+        <div class="steps">
+            <div class="step">
+                <span class="step-num">1</span>
+                <p>上の入力欄に、Twitterで使いたい名前を<strong>Enterキーで改行しながら</strong>入力します。</p>
+            </div>
+            <div class="step">
+                <span class="step-num">2</span>
+                <p>「変換してコピー」ボタンを押すと、特殊な改行コードに変換され、クリップボードに保存されます。</p>
+            </div>
+            <div class="step">
+                <span class="step-num">3</span>
+                <p>X（Twitter）のプロフィール編集を開き、「名前」の欄に貼り付けて保存してください。</p>
+            </div>
+        </div>
+        <div class="note">
+            <p><strong>【注意点】</strong></p>
+            <ul>
+                <li>PC版では空白に見えますが、スマホアプリ版では改行されます。</li>
+                <li>名前の文字数制限（50文字）を超えないよう注意してください。</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<div id="toast" class="toast">コピーしました！</div>
+
+<script src="script.js"></script>
+</body>
+</html>
