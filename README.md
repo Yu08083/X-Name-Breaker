@@ -1,7 +1,7 @@
 ## プロジェクト名: X(Twitter) 名前改行ツール
 目的: Xの名前欄で「改行」を可能にする特殊文字（LSEP: U+2028）への一括置換。
 
-webで使いたい方：
+webで使いたい方：https://yu08083.github.io/X-Name-Breaker/
 
 ## 📁 ファイル構成
 ・index.html - アプリの構造・手順ガイド
