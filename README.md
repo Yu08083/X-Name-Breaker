@@ -4,9 +4,9 @@
 webで使いたい方：https://yu08083.github.io/X-Name-Breaker/
 
 ## 📁 ファイル構成
-・index.html - アプリの構造・手順ガイド
-・style.css - X風のモダンなUIデザイン
-・script.js - 改行置換ロジック・コピー機能
+・index.html - アプリの構造・手順ガイド<br>
+・style.css - X風のモダンなUIデザイン<br>
+・script.js - 改行置換ロジック・コピー機能<br>
 ## 🛠 使い方
 1.3つのファイルを同じフォルダに保存して index.html をブラウザで開く。
 2.入力欄で「Enterキー」を使って改行し、名前を入力。
